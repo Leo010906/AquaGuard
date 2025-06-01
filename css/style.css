@@ -90,6 +90,23 @@ nav ul li a:hover {
     }
 }
 
+.themes {
+    display: flex;
+    gap: 10px;
+}
+
+.themes button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.themes button:hover {
+    color: var(--accent-color);
+}
+
 .hero {
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
                 url('../img/city_back.jpg') center/cover no-repeat;
