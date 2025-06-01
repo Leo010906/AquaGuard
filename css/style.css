@@ -61,6 +61,34 @@ nav ul li a:hover {
     color: var(--accent-color);
 }
 
+.menu-mobile {
+    display: none;
+    font-size: 2rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #0b1f2b;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        padding: 20px;  
+        border-radius: 10px;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .menu-mobile {
+        display: block;
+    }
+}
+
 .hero {
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
                 url('../img/city_back.jpg') center/cover no-repeat;
