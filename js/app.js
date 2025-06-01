@@ -4,6 +4,18 @@ function toggleMenu() {
 
 }
 
+function mudarTema(tema) {
+    if (tema === 'escuro') {
+        document.documentElement.style.setProperty('--bg-color', '#0b1f2b');
+    }
+    if (tema === 'claro') {
+        document.documentElement.style.setProperty('--bg-color', '#f1f1f1');
+    }
+    if (tema === 'verde') {
+        document.documentElement.style.setProperty('--bg-color', '#022f2f');
+    }
+}
+
 let slideindex = 0; 
 showSlides();
 function showSlides() {
