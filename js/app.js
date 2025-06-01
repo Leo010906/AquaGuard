@@ -7,12 +7,12 @@ function toggleMenu() {
 let slideindex = 0; 
 showSlides();
 function showSlides() {
-    const slides = document.getElementsByClassName("slide");
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
+    const slide = document.getElementsByClassName("slide");
+    for (let i = 0; i < slide.length; i++) {
+        slide[i].style.display = "none";  
     }
     slideindex++;
-    if (slideindex > slides.length) {slideindex = 1}    
-    slides[slideindex - 1].style.display = "block";  
-    setTimeout(showSlides, 2000);
+    if (slideindex > slide.length) {slideindex = 1}    
+    slide[slideindex - 1].style.display = "block";  
+    setTimeout(showSlides, 3000);
 }
