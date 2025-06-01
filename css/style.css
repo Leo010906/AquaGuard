@@ -86,6 +86,7 @@ nav ul li a:hover {
 
     .menu-mobile {
         display: block;
+        border-radius: 10px;
     }
 }
 
@@ -173,8 +174,9 @@ section img {
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px) scale(1.02);
     background-color: #123c53;
+    cursor: pointer;
 }
 
 .card img {
@@ -193,13 +195,62 @@ section img {
     margin-bottom: 15px;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #07151e;
-    margin-top: 50px;
+form {
+    background-color: #0f2a3b;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-footer p {
-    margin: 5px;
+form input, 
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #07151e;
+    border: 1px solid #38bdf8;
+    border-radius: 8px;
+    color: var(--text-color);
+    font-size: 1rem;
 }
+
+form input::placeholder, 
+form textarea::placeholder {
+    color: #ccc;
+}
+
+form input:focus, 
+form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    background-color: #0b1f2b;
+}
+
+form button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: var(--accent-color);
+}
+
+footer {
+    background-color: #07151e;
+    color: var(--text-color);
+    text-align: center;
+    padding: 40px 20px;
+    width: 100%;
+    left: 0;
+    position: relative;
+}
+
+
+
